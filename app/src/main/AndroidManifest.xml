@@ -10,6 +10,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".ui.StartPay"
+                android:label="@string/title_activity_start_pay"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
                 android:name=".ui.StartpaymentMain"
                 android:label="@string/title_activity_startpayment_main"
                 android:theme="@style/AppTheme.NoActionBar">

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.hubtel.mobilecheckout.ui.StartPay
 import com.hubtel.mobilecheckout.ui.StartPaymentActivity
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val intent = Intent(MainActivity@this,StartPaymentActivity::class.java)
+        val intent = Intent(MainActivity@this,StartPay::class.java)
         var but = button
         but.setOnClickListener(object : View.OnClickListener{
 
