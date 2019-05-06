@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01c7ab</color>
+    <color name="colorPrimaryDark">#007675</color>
+    <color name="colorAccent">#009D95</color>
+    <color name="line_color">#dfe0e0</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="status_bar">#BDBDBD</color>
+    <color name="light_font">#BDBDBD</color>
+
+    <color name="facebook_bg">#e9ebee</color>
+    <color name="faintPrimary">#fabe80</color>
+    <color name="pocketGreen">#50BCB6</color>
+    <color name="pocketRed">#D83A4E</color>
+    <color name="pocketGreenDark">#42aca6</color>
+    <color name="outlookGrey">#F8F8F8</color>
+    <color name="hubtel_light_blue">#A7C2CF</color>
+
+    <color name="outlookBlueDark">#0063AD</color>
+    <color name="outlookBlue">#0072C6</color>
+    <color name="greenColor">#228f95</color>
+    <color name="gradientTopBar">#01C7B1</color>
+
+    <color name="almostWhite">#F7F7F7</color>
+    <color name="tealGreen">#2CAF9B</color>
+
+    <color name="skyTeal">#2CAF9B</color>
+    <color name="skyBronze">#AF7027</color>
+    <color name="skySilver">#809AA2</color>
+    <color name="skyGold">#B09A2F</color>
+    <color name="skyGoldElite">#CFB40A</color>
+
+    <color name="rewardDarkBlue">#2E485F</color>
+
+
+    <integer-array name="pocket_bar_colors">
+        <item>@color/h5</item>
+        <item>@color/h2</item>
+        <item>@color/white</item>
+        <item>@color/h1</item>
+    </integer-array>
+
+
+    <color name="dark_grey">#212121</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent_white">#ddffffff</color>
+    <color name="transparent_white_lighter">#55ffffff</color>
+    <!--<color name="normal_text_color">#757575</color>-->
+    <color name="normal_text_color">#333333</color>
+    <!--<color name="darker_normal_text_color">#505050</color>-->
+    <color name="darker_normal_text_color">#222222</color>
+    <!--<color name="darkest_normal_text_color">#252525</color>-->
+    <color name="darkest_normal_text_color">#111111</color>
+    <color name="mediumApp">#C3DDDA</color>
+    <color name="mediumBlueBlack">#09304C</color>
+    <color name="mediumBlueGrey">#6C737F</color>
+    <color name="mediumGreen">#00AB69</color>
+    <color name="hubtel_light_green">#E5F5F4</color>
+    <color name="transparent_hubtel_light_green">#77E5F5F4</color>
+    <color name="transparent_deeper_hubtel_light_green">#226AB344</color>
+
+    <color name="accent_dark">#ff2929</color>
+    <color name="accent">#ff5252</color>
+    <color name="secondary_text">#727272</color>s
+    <color name="white_overlay">#F3F3F3</color>
+
+    <color name="gold">#F79C1F</color>
+    <color name="dark_gold">#C47C19</color>
+
+    <color name="new_grey">#ededed</color>
+
+
+    <color name="h1">#DB251D</color>
+    <color name="h2">#E88C1B</color>
+    <color name="h3">#1D8B88</color>
+    <color name="h5">#006787</color>
+    <color name="h4">#d2bf55</color>
+
+
+
+    <!--palette colors-->
+
+    <color name="palette_1">#082f4d</color>
+    <color name="palette_2">#f8971d</color>
+    <color name="palette_3">#009d96</color>
+    <color name="palette_4">#ef4923</color>
+    <color name="palette_5">#0644a0</color>
+    <color name="palette_6">#006e90</color>
+    <color name="palette_7">#86c8fd</color>
+    <color name="palette_8">#8493a7</color>
+    <color name="palette_9">#162541</color>
+    <color name="palette_10">#d2bf55</color>
+    <color name="palette_11">#39dec9</color>
+    <color name="palette_12">#57a8cd</color>
+    <color name="palette_13">#9f3ada</color>
+    <color name="palette_14">#c7c7c7</color>
+    <color name="palette_15">#2bc9dd</color>
+    <color name="palette_16">#00d4c3</color>
+    <color name="palette_17">#5fb49c</color>
+    <color name="palette_18">#aa3135</color>
+    <color name="palette_19">#686868</color>
+    <color name="palette_20">#ff4157</color>
+    <color name="palette_21">#e9afa3</color>
+    <color name="palette_22">#880f4a</color>
+    <color name="palette_23">#e2548d</color>
+    <color name="palette_24">#342e37</color>
+
+    <color name="chat_blue">#eaf7f5</color>
+    <color name="chat_yellow">#fcf8cd</color>
+    <color name="chat_cobalt">#C3F0FD</color>
+    <color name="light_blue">#C3F0FD</color>
+    <color name="chat_background">#EFEFF4</color>
+    <color name="grey_50">#939598</color>
+
+    <color name="black">#000000</color>
+    <color name="transparent_black">#55000000</color>
+    <color name="grash">#F6F6F6</color>
+    <color name="grey_">#b3bac1</color>
+    <color name="text_grey_color">#999999</color>
+
+    <color name="card_view_selector_color">#22008033</color>
+
+    <!-- shades of grey -->
+    <color name="grey_shade_0">#44ffffff</color>
+    <color name="grey_shade_1">#aafefefe</color>
+    <color name="grey_shade_2">#aaf6f6f6</color>
+    <color name="grey_shade_3">#aaeaeaea</color>
+    <color name="grey_shade_6">#878B90</color>
+    <color name="grey_shade_4">#F8F8F8</color>
+    <color name="grey_shade_5">#f7f7f9</color>
+    <color name="stream_bottom_border">#FFFFFF</color>
+
+    <color name="grey">#FAFAFA</color>
+    <color name="nearly_transparent">#33FAFAFA</color>
+    <color name="transparent">#00FAFAFA</color>
+    <color name="hubtel_yellow">#F8961D</color>
+    <color name="hubtel_grey">#737474</color>
+    <color name="hubtel_dark_green">#006787</color>
+    <!--<color name="hubtel_accent">#009D95</color>-->
+    <color name="hubtel_accent">#ACC9D5</color>
+
+    <color name="hubtel_green_new_transparent">#2230BAAC</color>
+    <color name="hubtel_green_new">#30BAAC</color>
+    <!--<color name="light_grey">#cdcdcd</color>-->
+    <color name="light_grey">#F8F8F8</color>
+    <color name="digit_background_color">#f4f4f4</color>
+    <color name="digit_background_color_white">#f4f4f4</color>
+    <color name="digit_background_danger_color">#33F11C3B</color>
+    <color name="hubtel_outline">#BDD6E6</color>
+    <color name="hubtel_outline_darker">#ACC9D5</color>
+    <color name="body_background">#EfEff4</color>
+    <!--<color name="body_background">#F6F6F6</color>-->
+    <color name="mpchart_gray">#EFEFEF</color>
+    <color name="pale_yellow">#fff9f2</color>
+
+    <color name="teal_card_text_color">#2A4A59</color>
+
+
+    <!--hubtell colors-->
+    <color name="hubtel_green">#72B1C2</color>
+    <!--end of palette colors-->
+
+
+    <!--credit card colors-->
+    <color name="credit_card_color_1">#0B2943</color>
+    <color name="credit_card_color_2">#135C7C</color>
+
+    <color name="credit_card_color_3">#B2B2B2</color>
+    <color name="credit_card_color_4">#cc175497</color>
+
+    <color name="credit_card_color_5">#cc1A2537</color>
+    <color name="credit_card_color_6">#cc993114</color>
+    <!--credit card colors-->
+
+    <color name="grey_header_text_color">#cdcdcd</color>
+    <!--badge colors-->
+    <!--end of badge colors-->
+    <color name="tealBadgeBackground">#f2f2f2</color>
+    <color name="bronzeBadgeBackground">#ffefcf</color>
+    <color name="silverBadgeBackground">#e3eff5</color>
+    <color name="goldBadgeBackground">#ffefcd</color>
+    <color name="goldEliteBadgeBackground">#fadf8d</color>
+    <color name="platinumBadgeBackground">#2E333B</color>
+
+    <color name="tealBadgeText">#4d4d4d</color>
+    <color name="bronzeBadgeText">#bc7e27</color>
+    <color name="silverBadgeText">#8ea7af</color>
+    <color name="goldBadgeText">#d9bf00</color>
+    <color name="goldEliteBadgeText">#bda632</color>
+    <color name="platinumBadgeText">#B3BAC1</color>
+    <color name="bottom_sheet_default">#6A6E7C</color>
+
+
+    <!--Carefore-->
+    <color name="grey_circular_border">#B1B8BE</color>
+
+    <!-- shades of white -->
+    <color name="white_shade_1">#aaffffff</color>
+    <color name="white_shade_2">#aaededed</color>
+    <color name="white_shade_3">#aaefefef</color>
+    <color name="white_shade_4">#aafefefe</color>
+    <color name="white_shade_5">#aadedede</color>
+    <color name="white_shade_6">#aaededed</color>
+    <color name="white_shade_7">#aafcfcfc</color>
+
+
+</resources>
