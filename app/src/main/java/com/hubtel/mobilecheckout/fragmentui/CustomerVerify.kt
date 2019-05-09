@@ -1,21 +1,17 @@
 package com.hubtel.mobilecheckout.fragmentui
 
 
-import android.media.Image
 import android.os.Bundle
-import android.support.design.widget.BottomSheetDialogFragment
-import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.*
-import android.widget.ImageView
-import android.widget.Toast
 import com.debut.countrycodepicker.CountryPicker
 import com.debut.countrycodepicker.data.Country
 import com.debut.countrycodepicker.listeners.CountryCallBack
-import com.hubtel.mobilecheckout.Dialogs.HPDialogs
+import com.hubtel.mobilecheckout.dialogs.HPDialogs
 
 import com.hubtel.mobilecheckout.R
-import kotlinx.android.synthetic.main.fragment_customer_verify.*
+import com.hubtel.mobilecheckout.controllers.CustomerVerificationController
 import kotlinx.android.synthetic.main.fragment_customer_verify.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -23,14 +19,12 @@ import kotlinx.android.synthetic.main.fragment_customer_verify.view.*
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- *
- */
+
 class CustomerVerify : Fragment() {
 
 
-    //val phoneNumberField = phoneNumberField
+
+    lateinit var countryThis: Country
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,9 +53,10 @@ class CustomerVerify : Fragment() {
 
         verifyButton.setOnClickListener {
 
-            var hpdailog = context?.let { it1 -> HPDialogs(it1,"loader") }
+            Log.d("Debug","formaterd number {${CustomerVerificationController.formatPhoneNumber(phoneNumberField.text.toString(),countryThis.countryCode)}()}")
 
-            hpdailog?.show()
+           // var hpdailog = context?.let { it1 -> HPDialogs(it1,"Verifying phone number ...") }
+            //hpdailog?.show()
 
         }
 
@@ -70,46 +65,16 @@ class CustomerVerify : Fragment() {
              CountryPicker.show(activity?.supportFragmentManager, object : CountryCallBack {
                  override fun onCountrySelected(country: Country) {
 
+                     Log.d("debug","$country")
+                     countryThis = country
 
                      imageIcon.setImageBitmap(country.flag)
-                     //phoneNumberField.hint = country.countryCode
-                    // phoneNumberField.setText(country.countryCode)
-                  //   phoneNumberField.text =
 
-                    // Snackbar.make(view, "Country : ${country.name} and Country Code : ${country.countryCode}", Snackbar.LENGTH_LONG).show()
 
                  }
              })
          }
     }
- /*   override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.payment_menu, menu);
-
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.action_summary -> {
-
-
-                var bottomSheet = SummaryFSheet()
-                bottomSheet.show(activity?.supportFragmentManager,"summaryTag")
-
-                true
-            }
-
-            else -> super.onOptionsItemSelected(item)
-        }
-    }*/
-
-
-    /**   override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.payment_menu, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }**/
-
-
 
 
 

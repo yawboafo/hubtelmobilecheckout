@@ -23,7 +23,7 @@ public class LoadingView extends LinearLayout {
     private int resourceId;
     private int loadingTextColor;
     private boolean blockUiWhileLoading = false;
-    TextView tvLoadingText;
+
     public LoadingView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initializeView(context, attrs);
@@ -76,9 +76,8 @@ public class LoadingView extends LinearLayout {
         if (!TextUtils.isEmpty(loadingText)) {
             LinearLayout.LayoutParams textViewLayoutParams = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
             textViewLayoutParams.gravity = Gravity.CENTER;
-             tvLoadingText = new TextView(context);
+            TextView tvLoadingText = new TextView(context);
             tvLoadingText.setText(loadingText);
-            tvLoadingText.setTag("LOADINGTXT");
             tvLoadingText.setGravity(Gravity.CENTER);
             tvLoadingText.setTextColor(loadingTextColor);
             if (loadingTextSize > 0) {
@@ -104,13 +103,6 @@ public class LoadingView extends LinearLayout {
             this.addView(gifView, 0);
         }
         enableViewInteraction();
-    }
-
-
-    public void setLoadingText(String txt){
-
-        tvLoadingText.setText(txt);
-
     }
 
 

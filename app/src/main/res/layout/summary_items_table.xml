@@ -29,7 +29,8 @@
                     android:text="Amount"
                     android:layout_width="match_parent"
                     android:layout_height="26dp" tools:layout_editor_absoluteY="92dp"
-                    tools:layout_editor_absoluteX="301dp" android:id="@+id/textView8" android:gravity="center"/>
+                    tools:layout_editor_absoluteX="301dp" android:id="@+id/textView8"
+                    android:gravity="center|right|end"/>
 
         </LinearLayout>
         <android.support.v7.widget.RecyclerView

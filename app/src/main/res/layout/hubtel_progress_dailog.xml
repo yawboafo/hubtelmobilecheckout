@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:background="@android:color/transparent"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
                                              android:layout_height="match_parent">
 
 
     <com.mohammedalaa.gifloading.LoadingView
-            android:id="@+id/loading_view"
-            android:layout_width="175dp"
-            android:layout_height="90dp"
-            android:visibility="visible"
-            app:loading_text="@string/loading"
 
+            android:id="@+id/loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
             app:block_while_loading="true"
             app:srcImg="@raw/hubtel_loader"
             app:loading_text_color="@color/colorAccent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.208"/>
+            app:layout_constraintVertical_bias="0.198"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="297dp"
+            android:layout_height="27dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/loaderTxt" android:gravity="center" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/loading_view"
+            android:layout_marginBottom="20dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
 </android.support.constraint.ConstraintLayout>

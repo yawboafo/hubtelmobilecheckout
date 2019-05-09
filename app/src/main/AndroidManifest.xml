@@ -12,14 +12,15 @@
         <activity
                 android:name=".ui.StartPay"
                 android:label="@string/title_activity_start_pay"
+                android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name=".ui.StartpaymentMain"
+                android:name=".ui.StartpaymentMain"  android:screenOrientation="portrait"
                 android:label="@string/title_activity_startpayment_main"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ui.StartPaymentActivity">
+        <activity  android:screenOrientation="portrait" android:name=".ui.StartPaymentActivity">
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

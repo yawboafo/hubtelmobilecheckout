@@ -1,13 +1,10 @@
-package com.hubtel.mobilecheckout.Dialogs
+package com.hubtel.mobilecheckout.dialogs
 
-import android.R.attr.gravity
 import android.app.Dialog
 import android.content.Context
-import android.databinding.DataBindingUtil.setContentView
 import android.view.Gravity
 import android.view.LayoutInflater
 import com.hubtel.mobilecheckout.R
-import com.mohammedalaa.gifloading.LoadingView
 import kotlinx.android.synthetic.main.hubtel_progress_dailog.view.*
 
 
@@ -18,7 +15,7 @@ class HPDialogs(context: Context,loadingTxt: String) : Dialog(context) {
 
         val wlmp = window.attributes
 
-        wlmp.gravity = Gravity.CENTER_HORIZONTAL
+        wlmp.gravity = Gravity.CENTER_VERTICAL
         window.attributes = wlmp
         setTitle(null)
         setCancelable(false)
@@ -32,7 +29,9 @@ class HPDialogs(context: Context,loadingTxt: String) : Dialog(context) {
 
 
         val loadingView = view.loading_view
-        loadingView.setLoadingText("")
+        var  loadingTxtview = view.loaderTxt
+        loadingTxtview.text = loadingTxt
+
         loadingView.showLoading()
 
     }
