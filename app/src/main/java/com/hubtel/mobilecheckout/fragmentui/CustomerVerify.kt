@@ -3,12 +3,12 @@ package com.hubtel.mobilecheckout.fragmentui
 
 import android.media.Image
 import android.os.Bundle
+import android.support.design.widget.BottomSheetDialogFragment
 import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
+import android.widget.Toast
 import com.debut.countrycodepicker.CountryPicker
 import com.debut.countrycodepicker.data.Country
 import com.debut.countrycodepicker.listeners.CountryCallBack
@@ -30,6 +30,13 @@ class CustomerVerify : Fragment() {
 
 
     //val phoneNumberField = phoneNumberField
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -63,6 +70,35 @@ class CustomerVerify : Fragment() {
              })
          }
     }
+ /*   override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.payment_menu, menu);
+
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_summary -> {
+
+
+                var bottomSheet = SummaryFSheet()
+                bottomSheet.show(activity?.supportFragmentManager,"summaryTag")
+
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
+    }*/
+
+
+    /**   override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.payment_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }**/
+
+
+
 
 
 }
