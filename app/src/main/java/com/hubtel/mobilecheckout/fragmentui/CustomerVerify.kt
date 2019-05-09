@@ -12,6 +12,7 @@ import android.widget.Toast
 import com.debut.countrycodepicker.CountryPicker
 import com.debut.countrycodepicker.data.Country
 import com.debut.countrycodepicker.listeners.CountryCallBack
+import com.hubtel.mobilecheckout.Dialogs.HPDialogs
 
 import com.hubtel.mobilecheckout.R
 import kotlinx.android.synthetic.main.fragment_customer_verify.*
@@ -51,7 +52,18 @@ class CustomerVerify : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val imageIcon = view.countryCodeImg
+        val verifyButton = view.verifyButton
         val phoneNumberField = view.phoneNumberField
+
+
+
+        verifyButton.setOnClickListener {
+
+            var hpdailog = context?.let { it1 -> HPDialogs(it1,"loader") }
+
+            hpdailog?.show()
+
+        }
 
          imageIcon.setOnClickListener{
 

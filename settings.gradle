@@ -1,1 +1,1 @@
-include ':app', ':mobilecheckout', ':countrycodepicker'
+include ':app', ':mobilecheckout', ':countrycodepicker', ':gifloading'
